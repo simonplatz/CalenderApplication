@@ -23,10 +23,10 @@ A basic calendar application built with React TypeScript frontend and ASP.NET Co
 
 ### 1. Start Backend
 ```bash
-cd backend
+cd backend/CalendarApplication.API
 dotnet run
 ```
-Backend runs on: `http://localhost:5048`
+Backend runs on: `http://localhost:5238`
 
 ### 2. Start Frontend
 ```bash
@@ -39,10 +39,10 @@ Frontend runs on: `http://localhost:5174`
 ## Project Structure
 
 ```
-├── backend/                 # Simple ASP.NET Core API (single project)
-│   ├── Controllers/         # API controllers
-│   ├── Models.cs           # Entity models and DbContext
-│   └── Program.cs          # Application configuration
+├── backend/                 # ASP.NET Core API
+│   ├── CalendarApplication.API/
+│   ├── CalendarApplication.Core/
+│   └── CalendarApplication.Infrastructure/
 ├── frontend/               # React TypeScript App
 │   └── src/
 │       ├── App.tsx         # Main component
