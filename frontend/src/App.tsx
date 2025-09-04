@@ -14,12 +14,13 @@ function App() {
       title: newEventTitle,
       startDateTime: new Date().toISOString(),
       endDateTime: new Date(Date.now() + 60 * 60 * 1000).toISOString(), // 1 hour later
-      calendarId: '1'
+      isAllDay: false,
+      calendarId: 1
     });
     setNewEventTitle('');
   };
 
-  const handleDeleteEvent = async (eventId: string) => {
+  const handleDeleteEvent = async (eventId: number) => {
     await deleteEvent(eventId);
   };
 
